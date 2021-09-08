@@ -3,26 +3,36 @@
 @import "config";
 @import "mixins";
 @import "header";
+@import "theme-toggler";
+@import "portfolio";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&display=swap");
 
 // css custom props
 :root {
-  --primary-color: #031a6b;
-  --secondary-color: #9cd2fc;
-  --third-color: #021d27;
-  --fourth-color: #0a85ff;
-  --fifth-color: #0fcbfa;
+  --primary-color: #ff6464;
+  --secondary-color: #00a8cc;
+  --neutral-color1: #21243d;
+  --neutral-color2: #8695a4;
+  --neutral-color3: #c4c4c4;
+  font-family: "Noto Sans TC", sans-serif;
+  scroll-behavior: smooth;
 }
 
-.portfolio-item {
-  transition: all 300ms ease-in-out;
+// Global classes
 
-  // CSSTransitions Component props
+.app {
+  width: 93%;
+  margin: auto;
+}
 
-  &-enter {
-    opacity: 0;
-  }
+.section-title {
+  font-weight: 300;
+  text-align: center;
+}
 
-  &-exit {
-    opacity: 0;
-  }
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: var(--neutral-color1);
+  border-radius: 75%;
 }

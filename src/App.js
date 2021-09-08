@@ -1,5 +1,5 @@
 import React from "react";
-import { About, Contact, Footer, Header, Portfolio } from "./components";
+import { Contact, Footer, Header, Portfolio } from "./components";
 import portfolioData from "./portfolioData";
 
 class App extends React.Component {
@@ -9,15 +9,16 @@ class App extends React.Component {
       data: portfolioData,
       displayedTags: [],
       allTags: [],
+      themeIsLight: true,
     };
     this.tagToggler = this.tagToggler.bind(this);
+    this.themeToggle = this.themeToggle.bind(this);
   }
 
-  componentDidMount() {
-    //set initial state to own a list of all the tags
-    const allTags = [].concat(...this.state.data.map((item) => item.tags));
-    const allTagsUnique = Array.from(new Set(allTags));
-    this.setState({ allTags: allTagsUnique });
+  // methods
+
+  themeToggle() {
+    this.setState({ themeIsLight: !this.state.themeIsLight });
   }
 
   tagToggler(event) {
@@ -30,12 +31,28 @@ class App extends React.Component {
     }
     this.setState({ displayedTags: newDisplayedTags });
   }
+
+  // life cycle
+
+  componentDidMount() {
+    //set initial state to own a list of all the tags
+    const allTags = [].concat(...this.state.data.map((item) => item.tags));
+    const allTagsUnique = Array.from(new Set(allTags));
+    this.setState({ allTags: allTagsUnique });
+  }
+
   render() {
     return (
-      <div className="app">
-        <Header />
+      <div
+        className={
+          this.state.themeIsLight ? "app theme-light" : "app theme-dark"
+        }
+      >
+        <Header
+          themeIsLight={this.state.themeIsLight}
+          handleClick={this.themeToggle}
+        />
         <main>
-          <About />
           <Portfolio tagToggler={this.tagToggler} {...this.state} />
           <Contact />
         </main>

@@ -1,0 +1,26 @@
+.theme-toggler {
+  position: relative;
+  border: none;
+  cursor: pointer;
+  width: 64px;
+  height: 32px;
+  background-color: var(--neutral-color3);
+  border-radius: 15px;
+  margin: 10px auto 10px auto;
+  transition: all 150ms ease-in-out;
+
+  &__switch {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    top: 3px;
+    left: 4px;
+    transition: all 150ms ease-in-out;
+
+    &--on {
+      transform: translateX(31px);
+    }
+  }
+}

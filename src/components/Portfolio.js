@@ -1,5 +1,4 @@
 import React from "react";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
 import PortfolioItem from "./PortfolioItem";
 
 function Portfolio(props) {
@@ -8,33 +7,24 @@ function Portfolio(props) {
     .filter((item) =>
       item.tags.some((item) => displayedTags.indexOf(item) >= 0)
     )
-    .map((item) => (
-      <CSSTransition
-        unmountOnExit
-        timeout={300}
-        classNames="portfolio-item"
-        key={item.title}
-      >
-        <PortfolioItem key={item.title} {...item} />
-      </CSSTransition>
-    ));
+    .map((item) => <PortfolioItem key={item.title} {...item} />);
 
   const tagButtons = props.allTags.map((item) => (
-    <label className="tag-button__label" key={item} htmlFor={item}>
+    <button
+      className="tag-button"
+      key={item}
+      name={item}
+      onClick={props.tagToggler}
+    >
       {item}
-      <input
-        className="tag-button__input"
-        type="checkbox"
-        name={item}
-        onChange={props.tagToggler}
-      />
-    </label>
+    </button>
   ));
   return (
-    <div id="portfolio" className="portfolio">
-      <h2>This is the portfolio section</h2>
+    <div id="portfolio" className="section portfolio">
+      <div className="divider"></div>
+      <h2 className="section-title portfolio__title">Portfolio</h2>
       {tagButtons}
-      <TransitionGroup>{portfolioItems}</TransitionGroup>
+      <div className="portfolio-items-grid">{portfolioItems}</div>
     </div>
   );
 }
