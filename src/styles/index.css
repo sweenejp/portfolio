@@ -1,0 +1,123 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  color: var(--secondary-color);
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "brand" "nav";
+  width: 93%;
+  margin: auto;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.brand {
+  grid-area: brand;
+  position: relative;
+  width: fit-content;
+  font-size: 3rem;
+}
+.brand::before {
+  content: "";
+  width: 100%;
+  background-color: var(--fourth-color);
+  height: 20px;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  border-radius: 2px;
+}
+
+.nav {
+  grid-area: nav;
+  position: relative;
+  width: fit-content;
+}
+.nav::before {
+  content: "";
+  width: 100%;
+  background-color: var(--fourth-color);
+  height: 20px;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  border-radius: 2px;
+}
+.nav__list {
+  display: flex;
+  gap: 1em;
+}
+.nav__link {
+  color: var(--secondary-color);
+}
+
+:root {
+  --primary-color: #031a6b;
+  --secondary-color: #9cd2fc;
+  --third-color: #021d27;
+  --fourth-color: #0a85ff;
+  --fifth-color: #0fcbfa;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.app {
+  width: 100%;
+  margin: auto;
+  background-color: var(--third-color);
+}
+
+.about {
+  height: 100vh;
+}
+
+.portfolio {
+  height: 100vh;
+}
+
+.tag-button__input {
+  width: 50px;
+  --focus: 2px rgba(39, 94, 254, 0.25);
+  outline: none;
+  transition: box-shadow 0.2s;
+}
+
+.contact {
+  height: 100vh;
+}
+
+.portfolio-item {
+  transition: all 300ms ease-in-out;
+}
+.portfolio-item-enter {
+  opacity: 0;
+}
+.portfolio-item-exit {
+  opacity: 0;
+  font-size: 0;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,12 @@
+@mixin ribbon($height, $color) {
+  &::before {
+    content: "";
+    width: 100%;
+    background-color: $color;
+    height: $height;
+    position: absolute;
+    top: -$height * 1.5;
+    left: 0;
+    border-radius: 2px;
+  }
+}
