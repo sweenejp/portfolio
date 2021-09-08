@@ -13,37 +13,6 @@
   --fifth-color: #0fcbfa;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-.app {
-  width: 100%;
-  margin: auto;
-  background-color: var(--third-color);
-}
-
-.about {
-  height: 100vh;
-}
-
-.portfolio {
-  height: 100vh;
-}
-
-.tag-button {
-  &__input {
-    width: 50px;
-    --focus: 2px rgba(39, 94, 254, 0.25);
-    outline: none;
-    transition: box-shadow 0.2s;
-  }
-}
-
-.contact {
-  height: 100vh;
-}
-
 .portfolio-item {
   transition: all 300ms ease-in-out;
 
@@ -55,6 +24,5 @@ html {
 
   &-exit {
     opacity: 0;
-    font-size: 0;
   }
 }
