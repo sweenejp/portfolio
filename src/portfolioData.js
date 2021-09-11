@@ -6,7 +6,7 @@ const portfolioData = [
     gitRepo: "https://github.com/sweenejp/meme-generator",
     liveSite: "https://jsweeney-meme-generator.netlify.app/",
     display: true,
-    tags: ["HTML", "CSS", "React", "API"],
+    tags: ["CSS", "React", "API"],
   },
   {
     title: "Social Dashboard",
@@ -15,7 +15,7 @@ const portfolioData = [
     gitRepo: "https://github.com/sweenejp/social-media-dashboard",
     liveSite: "https://jasweeney-social-media-dashboard.netlify.app/",
     display: true,
-    tags: ["Featured", "HTML", "CSS", "React", "SASS"],
+    tags: ["Featured", "React", "SASS", "API"],
   },
   {
     title: "Sunnyside Agency Page",
@@ -24,7 +24,7 @@ const portfolioData = [
     gitRepo: "https://github.com/sweenejp/sunnyside-agency-landing-page",
     liveSite: "https://jsweeney-sunnyside-agency-landing-page.netlify.app/",
     display: true,
-    tags: ["HTML", "CSS", "SASS"],
+    tags: ["Featured", "HTML", "SASS"],
   },
   {
     title: "Four Card Feature Section",
@@ -43,7 +43,55 @@ const portfolioData = [
     gitRepo: "https://github.com/sweenejp/question-logger",
     liveSite: "https://jsweeney-question-logger.netlify.app/",
     display: true,
-    tags: ["React", "CSS"],
+    tags: ["React", "CSS", "Featured"],
+  },
+  {
+    title: "Apparel Coming Soon Page",
+    screenshot: "images/base-apparel-coming-soon.png",
+    description:
+      "A sample 'coming soon' page for an apparel company. Features some simple form validation.",
+    gitRepo: "https://github.com/sweenejp/base-apparel-coming-soon-page",
+    liveSite: "https://jsweeney-base-apparel-coming-soon-page.netlify.app/",
+    display: true,
+    tags: ["SASS", "HTML"],
+  },
+  {
+    title: "Social Proof Section",
+    screenshot: "images/social-proof-section.png",
+    description: "An example of an intricate layout using just HTML and CSS.",
+    gitRepo: "https://github.com/sweenejp/social-proof-section",
+    liveSite: "https://jsweeney-social-proof-section.netlify.app/",
+    display: true,
+    tags: ["CSS", "HTML"],
+  },
+  {
+    title: "Huddle Landing Page",
+    screenshot: "images/huddle-landing-page.png",
+    description:
+      "A sample landing page with 'mobile-first' design and responsive layout.",
+    gitRepo: "https://github.com/sweenejp/huddle-landing-page",
+    liveSite: "https://jsweeney-huddle-landing-page.netlify.app/",
+    display: true,
+    tags: ["CSS", "HTML"],
+  },
+  {
+    title: "Single Price Component",
+    screenshot: "images/single-price-component.png",
+    description:
+      "A sample price component with 'mobile-first' design and responsive layout.",
+    gitRepo: "https://github.com/sweenejp/single-price-grid-component",
+    liveSite: "https://jsweeney-single-price-grid-component.netlify.app/",
+    display: true,
+    tags: ["CSS", "HTML"],
+  },
+  {
+    title: "Profile Card Component",
+    screenshot: "images/profile-card-component.png",
+    description: "A sample profile card component.",
+    gitRepo: "https://github.com/sweenejp/profile-card-component",
+    liveSite: "https://jsweeney-profile-card-component.netlify.app/",
+    display: true,
+    tags: ["CSS", "HTML"],
   },
 ];
 
