@@ -7,7 +7,7 @@ function Contact() {
       <div className="divider"></div>
       <h2 className="section__title contact__title">Contact</h2>
       <p className="section__description">
-        I can build your next website! I look forward to hearing from you.
+        I'd love to build your next website! I look forward to hearing from you.
       </p>
       <Form />
     </section>
