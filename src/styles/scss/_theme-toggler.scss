@@ -21,6 +21,8 @@
 
     &--on {
       transform: translateX(31px);
+      -webkit-transform: translateX(31px);
+      -ms-transform: translateX(31px);
     }
   }
 }

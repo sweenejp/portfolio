@@ -38,7 +38,26 @@ class App extends React.Component {
     //set initial state to own a list of all the tags
     const allTags = [].concat(...this.state.data.map((item) => item.tags));
     const allTagsUnique = Array.from(new Set(allTags));
-    this.setState({ allTags: allTagsUnique });
+
+    // get local storage
+    const displayedTags = localStorage.getItem("displayedTags")
+      ? JSON.parse(localStorage.getItem("displayedTags"))
+      : ["Featured"];
+    const themeIsLight =
+      localStorage.getItem("themeIsLight") === "false" ? false : true;
+    this.setState({
+      allTags: allTagsUnique,
+      displayedTags: displayedTags,
+      themeIsLight: themeIsLight,
+    });
+  }
+
+  componentDidUpdate() {
+    localStorage.setItem(
+      "displayedTags",
+      JSON.stringify(this.state.displayedTags)
+    );
+    localStorage.setItem("themeIsLight", this.state.themeIsLight);
   }
 
   render() {

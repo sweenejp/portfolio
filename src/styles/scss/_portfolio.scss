@@ -56,22 +56,6 @@
     opacity: 1;
   }
 }
-@-webkit-keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
 
 .portfolio-item {
   -webkit-animation: fadeIn 1s;
@@ -91,6 +75,7 @@
   &__screenshot {
     height: 300px;
     object-fit: cover;
+    -o-object-fit: cover;
     object-position: center top;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
