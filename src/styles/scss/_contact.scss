@@ -1,0 +1,45 @@
+.simple-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: auto;
+  padding-bottom: 3em;
+  label {
+    display: none;
+  }
+
+  &__field,
+  &__button {
+    flex: auto;
+    padding: 0.5em;
+    margin: 0.5em;
+    border: none;
+    border-radius: 3px;
+    transition: all 75ms ease-in-out;
+
+    &:hover {
+      outline: 3px solid var(--secondary-color);
+    }
+
+    &:focus {
+      outline: 3px solid var(--primary-color);
+    }
+
+    &.textarea {
+      resize: none;
+      height: 125px;
+      width: 100%;
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    outline: none;
+    background-color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--neutral-color3);
+    text-transform: uppercase;
+  }
+}

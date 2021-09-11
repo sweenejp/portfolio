@@ -5,15 +5,12 @@
 @import "header";
 @import "theme-toggler";
 @import "portfolio";
+@import "contact";
+@import "footer";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&display=swap");
 
 // css custom props
 :root {
-  --primary-color: #ff6464;
-  --secondary-color: #00a8cc;
-  --neutral-color1: #21243d;
-  --neutral-color2: #8695a4;
-  --neutral-color3: #c4c4c4;
   font-family: "Noto Sans TC", sans-serif;
   scroll-behavior: smooth;
 }
@@ -21,13 +18,30 @@
 // Global classes
 
 .app {
+  background-color: var(--background-color);
+  width: 100%;
+  margin: auto;
+  color: var(--neutral-color1);
+}
+
+main {
   width: 93%;
   margin: auto;
 }
 
-.section-title {
-  font-weight: 300;
-  text-align: center;
+.section {
+  min-height: 70vh;
+
+  &__title {
+    font-weight: 300;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  &__description {
+    text-align: center;
+    padding: 1rem;
+  }
 }
 
 .divider {
@@ -35,4 +49,14 @@
   height: 2px;
   background-color: var(--neutral-color1);
   border-radius: 75%;
+}
+
+a {
+  color: var(--neutral-color1);
+  transition: color 125ms ease-in-out;
+}
+
+a:hover,
+a:focus {
+  color: var(--neutral-color2);
 }

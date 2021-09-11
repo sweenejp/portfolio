@@ -1,5 +1,5 @@
 .header {
-  height: 75vh;
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
   padding: 1em;
@@ -23,15 +23,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  a {
-    color: var(--neutral-color1);
-    transition: color 125ms ease-in-out;
-  }
-
-  a:hover,
-  a:focus {
-    color: var(--neutral-color2);
-  }
 }
 
 .portrait-container {
@@ -43,7 +34,6 @@
   &::before {
     content: "";
     display: block;
-    z-index: -1;
     width: 200px;
     height: 200px;
     border-radius: 50%;
