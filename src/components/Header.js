@@ -14,6 +14,9 @@ function Header(props) {
             <li className="nav__list-item fancy-underline">
               <a href="#contact">Contact</a>
             </li>
+            <li className="nav__list-item">
+              <ThemeToggler {...props} />
+            </li>
           </ul>
         </nav>
         <div className="portrait-container">
@@ -27,7 +30,6 @@ function Header(props) {
       <div className="header__title-section">
         <h1 className="title">Jimmy Sweeney</h1>
         <h2 className="subtitle">Websites and Frontend Development</h2>
-        <ThemeToggler {...props} />
         <About />
       </div>
     </header>

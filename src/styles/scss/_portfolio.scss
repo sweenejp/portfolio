@@ -19,16 +19,34 @@
   color: var(--neutral-color1);
   font-weight: 500;
   font-size: 1rem;
-  transition: all 250ms ease-in-out;
+  transition: box-shadow 250ms ease-in-out, color 250ms ease-in-out,
+    background-color 250ms ease-in-out;
+  -webkit-transition: box-shadow 250ms ease-in-out, color 250ms ease-in-out,
+    background-color 250ms ease-in-out;
+  -moz-transition: box-shadow 250ms ease-in-out, color 250ms ease-in-out,
+    background-color 250ms ease-in-out;
+  -ms-transition: box-shadow 250ms ease-in-out, color 250ms ease-in-out,
+    background-color 250ms ease-in-out;
+  -o-transition: box-shadow 250ms ease-in-out, color 250ms ease-in-out,
+    background-color 250ms ease-in-out;
 
   &:hover {
     box-shadow: 3px 3px var(--neutral-color1);
   }
 
+  &:focus {
+    box-shadow: 3px 3px $secondary-color;
+    outline: none;
+  }
+
   &.active {
     background-color: $primary-color;
     box-shadow: 3px 3px var(--neutral-color1);
-    color: var(--neutral-color3);
+    color: set-text-color($primary-color);
+
+    &:focus {
+      box-shadow: 3px 3px $secondary-color;
+    }
   }
 }
 

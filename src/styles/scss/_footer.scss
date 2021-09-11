@@ -8,7 +8,7 @@
 
   &-item {
     padding: 1em;
-    color: var(--neutral-color3);
+    color: set-text-color($secondary-color);
     display: block;
   }
 }

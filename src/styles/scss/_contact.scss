@@ -45,7 +45,7 @@
     cursor: pointer;
     outline: none;
     background-color: $primary-color;
-    color: var(--neutral-color3);
+    color: set-text-color($primary-color);
     font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase;

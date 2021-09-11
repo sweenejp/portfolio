@@ -9,7 +9,7 @@ function PortfolioItem(props) {
   ));
   return (
     <div className={`portfolio-item ${display ? "" : "hide"}`}>
-      <a href={props.liveSite} target="_blank" rel="noreferrer">
+      <a tabIndex="-1" href={props.liveSite} target="_blank" rel="noreferrer">
         <img
           className="portfolio-item__screenshot"
           src={props.screenshot}

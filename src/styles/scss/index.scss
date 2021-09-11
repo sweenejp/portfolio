@@ -7,6 +7,7 @@
 @import "contact";
 @import "footer";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap");
 
 // css custom props
 :root {
@@ -78,5 +79,66 @@ a {
     transform: scale(1, 1);
     -webkit-transform: scale(1, 1);
     -ms-transform: scale(1, 1);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus::before {
+    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+  }
+}
+
+@media screen and (min-width: 970px) {
+  .header {
+    display: grid;
+    gap: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title-section nav-section";
+    align-items: center;
+    font-size: 1.5rem;
+    justify-content: center;
+
+    &__nav-section {
+      grid-area: nav-section;
+    }
+
+    &__title-section {
+      grid-area: title-section;
+      text-align: left;
+      width: 575px;
+    }
+  }
+
+  .nav {
+    order: 2;
+  }
+
+  .portrait-container {
+    order: 1;
+    width: 300px;
+    height: 300px;
+
+    &::before {
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+  .portrait {
+    top: -305px;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .about .section__description {
+    text-align: left;
+    padding: 0;
+    word-wrap: break-word;
   }
 }

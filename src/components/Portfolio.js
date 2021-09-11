@@ -24,6 +24,7 @@ function Portfolio(props) {
       key={item}
       name={item}
       onClick={props.tagToggler}
+      onMouseDown={(e) => e.preventDefault()}
     >
       {item}
     </button>
