@@ -2,12 +2,8 @@ import React from "react";
 
 function Form() {
   return (
-    <form
-      className="simple-form"
-      method="POST"
-      name="contact"
-      data-netlify="true"
-    >
+    <form className="simple-form" method="post" name="contact">
+      <input type="hidden" name="form-name" value="contact" />
       <label htmlFor="userName">Name</label>
       <input
         className="simple-form__field input"
