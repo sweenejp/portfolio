@@ -36,6 +36,15 @@ const portfolioData = [
     display: true,
     tags: ["HTML", "CSS"],
   },
+  {
+    title: "Question Logger",
+    screenshot: "images/question-logger.png",
+    description: "A simple app built with React",
+    gitRepo: "https://github.com/sweenejp/question-logger",
+    liveSite: "https://jsweeney-question-logger.netlify.app/",
+    display: true,
+    tags: ["React", "CSS"],
+  },
 ];
 
 export default portfolioData;

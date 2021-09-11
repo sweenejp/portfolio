@@ -12,12 +12,12 @@ class App extends React.Component {
       themeIsLight: true,
     };
     this.tagToggler = this.tagToggler.bind(this);
-    this.themeToggle = this.themeToggle.bind(this);
+    this.themeToggler = this.themeToggler.bind(this);
   }
 
   // methods
 
-  themeToggle() {
+  themeToggler() {
     this.setState({ themeIsLight: !this.state.themeIsLight });
   }
 
@@ -50,7 +50,7 @@ class App extends React.Component {
       >
         <Header
           themeIsLight={this.state.themeIsLight}
-          handleClick={this.themeToggle}
+          handleClick={this.themeToggler}
         />
         <main>
           <Portfolio tagToggler={this.tagToggler} {...this.state} />
