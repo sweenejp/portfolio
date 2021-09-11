@@ -1,6 +1,14 @@
-footer {
+.footer {
+  display: flex;
   width: 100%;
   padding: 1rem;
   text-align: center;
-  background-color: var(--secondary-color);
+  background-color: $secondary-color;
+  justify-content: center;
+
+  &-item {
+    padding: 1em;
+    color: var(--neutral-color3);
+    display: block;
+  }
 }

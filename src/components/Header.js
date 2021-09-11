@@ -1,5 +1,6 @@
 import React from "react";
 import ThemeToggler from "./ThemeToggler";
+import About from "./About";
 
 function Header(props) {
   return (
@@ -7,10 +8,10 @@ function Header(props) {
       <div className="header__nav-section">
         <nav className="nav">
           <ul className="nav__list">
-            <li className="nav__list-item">
+            <li className="nav__list-item fancy-underline">
               <a href="#portfolio">Portfolio</a>
             </li>
-            <li className="nav__list-item">
+            <li className="nav__list-item fancy-underline">
               <a href="#contact">Contact</a>
             </li>
           </ul>
@@ -27,6 +28,7 @@ function Header(props) {
         <h1 className="title">Jimmy Sweeney</h1>
         <h2 className="subtitle">Websites and Frontend Development</h2>
         <ThemeToggler {...props} />
+        <About />
       </div>
     </header>
   );

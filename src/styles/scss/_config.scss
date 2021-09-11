@@ -1,18 +1,18 @@
+//scss variables
+$primary-color: #ff6464;
+$secondary-color: #00a8cc;
+
 //CSS customs
 .theme-light {
-  --primary-color: #ff6464;
-  --secondary-color: #00a8cc;
   --background-color: rgb(245, 245, 245);
   --neutral-color1: #21243d;
-  --neutral-color2: #8695a4;
-  --neutral-color3: #c4c4c4;
+  --neutral-color2: #c4c4c4;
+  --neutral-color3: rgb(51, 51, 51);
 }
 
 .theme-dark {
-  --primary-color: #ff6464;
-  --secondary-color: #00a8cc;
   --background-color: rgb(45, 45, 45);
   --neutral-color1: #abb0d6;
-  --neutral-color2: #5c92c9;
-  --neutral-color3: #b39ffc;
+  --neutral-color2: #4b4758;
+  --neutral-color3: rgb(51, 51, 51);
 }

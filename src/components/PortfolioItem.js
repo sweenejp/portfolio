@@ -2,7 +2,7 @@ import React from "react";
 
 function PortfolioItem(props) {
   const display = props.display;
-  const portfolioItemTags = props.tags.map((tag) => (
+  const portfolioItemTags = props.tags.sort().map((tag) => (
     <span className="portfolio-item__tag" key={tag}>
       {tag}
     </span>
@@ -18,15 +18,37 @@ function PortfolioItem(props) {
       </a>
       <h3 className="portfolio-item__title">{props.title}</h3>
       <ul>
-        <li className="portfolio-item__link">
-          <a href={props.liveSite}>
-            <img className="icon" src="images/preview.png" alt="Live Site" />{" "}
+        <li className="portfolio-item__list-item">
+          <a
+            className="portfolio-item__link fancy-underline"
+            href={props.liveSite}
+          >
+            <img
+              className="icon"
+              src={
+                props.themeIsLight
+                  ? "images/preview-dark.png"
+                  : "images/preview-light.png"
+              }
+              alt="Live Site"
+            />{" "}
             View live site
           </a>
         </li>
-        <li className="portfolio-item__link">
-          <a href={props.gitRepo}>
-            <img className="icon" src="images/github.png" alt="GitHub Repo" />{" "}
+        <li className="portfolio-item__list-item">
+          <a
+            className="portfolio-item__link fancy-underline"
+            href={props.gitRepo}
+          >
+            <img
+              className="icon"
+              src={
+                props.themeIsLight
+                  ? "images/github-dark.png"
+                  : "images/github-light.png"
+              }
+              alt="GitHub Repo"
+            />{" "}
             View repository
           </a>
         </li>

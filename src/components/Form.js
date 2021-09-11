@@ -24,7 +24,7 @@ function Form() {
         className="simple-form__field input"
         name="userPhoneNumber"
         type="tel"
-        placeholder="Phone Number"
+        placeholder="Phone Number (Optional)"
       ></input>
       <label htmlFor="userMessage">Message:</label>
       <textarea

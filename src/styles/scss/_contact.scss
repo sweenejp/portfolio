@@ -5,6 +5,7 @@
   max-width: 600px;
   margin: auto;
   padding-bottom: 3em;
+
   label {
     display: none;
   }
@@ -16,14 +17,21 @@
     margin: 0.5em;
     border: none;
     border-radius: 3px;
+    background-color: var(--neutral-color2);
+    color: var(--neutral-color1);
     transition: all 75ms ease-in-out;
 
+    &::placeholder {
+      color: var(--neutral-color1);
+      opacity: 0.8;
+    }
+
     &:hover {
-      outline: 3px solid var(--secondary-color);
+      outline: 3px solid $secondary-color;
     }
 
     &:focus {
-      outline: 3px solid var(--primary-color);
+      outline: 3px solid $primary-color;
     }
 
     &.textarea {
@@ -36,10 +44,19 @@
   &__button {
     cursor: pointer;
     outline: none;
-    background-color: var(--primary-color);
+    background-color: $primary-color;
+    color: var(--neutral-color3);
     font-size: 1rem;
     font-weight: 600;
-    color: var(--neutral-color3);
     text-transform: uppercase;
+
+    &:focus {
+      outline: 3px solid $secondary-color;
+    }
   }
+}
+
+.about {
+  max-width: 600px;
+  margin: auto;
 }

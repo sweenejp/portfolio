@@ -2,10 +2,13 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer>
+    <footer className="footer">
       <p>
-        <a href="https://github.com/sweenejp">Jimmy Sweeney</a>
+        <a className="footer-item" href="https://github.com/sweenejp">
+          Jimmy Sweeney
+        </a>
       </p>
+      <p className="footer-item">2021</p>
     </footer>
   );
 }

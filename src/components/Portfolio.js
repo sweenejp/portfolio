@@ -12,10 +12,11 @@ function Portfolio(props) {
           ? true
           : false
       }
+      themeIsLight={props.themeIsLight}
     />
   ));
 
-  const tagButtons = props.allTags.map((item) => (
+  const tagButtons = props.allTags.sort().map((item) => (
     <button
       className={`tag-button ${
         displayedTags.indexOf(item) >= 0 ? "active" : ""

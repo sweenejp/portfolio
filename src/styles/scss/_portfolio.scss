@@ -13,7 +13,7 @@
   border: none;
   border-radius: 3px;
   padding: 0.25em;
-  background-color: var(--neutral-color3);
+  background-color: var(--neutral-color2);
   margin: 0.25em;
   cursor: pointer;
   color: var(--neutral-color1);
@@ -22,19 +22,20 @@
   transition: all 250ms ease-in-out;
 
   &:hover {
-    box-shadow: 3px 3px black;
+    box-shadow: 3px 3px var(--neutral-color1);
   }
 
   &.active {
-    background-color: var(--primary-color);
+    background-color: $primary-color;
     box-shadow: 3px 3px var(--neutral-color1);
+    color: var(--neutral-color3);
   }
 }
 
 .portfolio-items-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1em;
+  gap: 2em;
   margin: auto;
   max-width: 1200px;
 }
@@ -79,10 +80,12 @@
   display: flex;
   flex-direction: column;
   gap: 0.25em;
+  box-shadow: 6px 6px var(--neutral-color1);
+
   transition: box-shadow 250ms ease-in-out;
 
   &:hover {
-    box-shadow: 6px 6px var(--neutral-color1);
+    box-shadow: 6px 6px $primary-color;
   }
 
   &__screenshot {
@@ -99,8 +102,10 @@
     padding: 0.25em;
   }
 
-  &__link {
+  &__list-item {
     position: relative;
+    margin-left: 4px;
+    margin-bottom: 6px;
   }
 
   &__description {
@@ -116,7 +121,7 @@
 
   &__tag {
     font-size: 0.8rem;
-    color: var(--neutral-color3);
+    color: var(--neutral-color2);
     background-color: var(--neutral-color1);
     border-radius: 5px;
     text-align: center;
