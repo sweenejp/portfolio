@@ -5,7 +5,12 @@ function Footer() {
     <footer className="footer">
       <p>
         <a className="footer-item" href="https://github.com/sweenejp">
-          Jimmy Sweeney
+          GitHub
+        </a>
+      </p>
+      <p>
+        <a className="footer-item" href="https://www.upwork.com/o/profiles/users/~018906f0dfe04b851c/">
+          Upwork
         </a>
       </p>
       <p className="footer-item">2021</p>
