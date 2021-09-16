@@ -6,7 +6,7 @@ const portfolioData = [
     gitRepo: "https://github.com/sweenejp/meme-generator",
     liveSite: "https://jsweeney-meme-generator.netlify.app/",
     display: true,
-    tags: ["CSS", "React", "API"],
+    tags: ["CSS", "React", "JavaScript", "API"],
   },
   {
     title: "Social Dashboard",
@@ -15,7 +15,7 @@ const portfolioData = [
     gitRepo: "https://github.com/sweenejp/social-media-dashboard",
     liveSite: "https://jasweeney-social-media-dashboard.netlify.app/",
     display: true,
-    tags: ["Featured", "React", "SASS", "API"],
+    tags: ["Featured", "React", "JavaScript", "SASS", "API"],
   },
   {
     title: "Sunnyside Agency Page",
@@ -43,7 +43,7 @@ const portfolioData = [
     gitRepo: "https://github.com/sweenejp/question-logger",
     liveSite: "https://jsweeney-question-logger.netlify.app/",
     display: true,
-    tags: ["React", "CSS", "Featured"],
+    tags: ["React", "CSS"],
   },
   {
     title: "Apparel Coming Soon Page",
@@ -92,6 +92,15 @@ const portfolioData = [
     liveSite: "https://jsweeney-profile-card-component.netlify.app/",
     display: true,
     tags: ["CSS", "HTML"],
+  },
+  {
+    title: "IP Address Tracker",
+    screenshot: "images/ip-address-tracker.png",
+    description: "A web app that returns data about IP addresses",
+    gitRepo: "https://github.com/sweenejp/ip-address-tracker",
+    liveSite: "https://jsweeney-ip-address-tracker.netlify.app/",
+    display: true,
+    tags: ["CSS", "HTML", "JavaScript", "API", "Featured"],
   },
 ];
 
