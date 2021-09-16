@@ -36,7 +36,6 @@ ul {
 }
 
 .header {
-  min-height: 75vh;
   display: flex;
   flex-direction: column;
   padding: 1em;
