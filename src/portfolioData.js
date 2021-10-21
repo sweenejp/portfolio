@@ -102,6 +102,16 @@ const portfolioData = [
     display: true,
     tags: ["CSS", "HTML", "JavaScript", "API", "Featured"],
   },
+  {
+    title: "Coffeeroasters Subscription Site",
+    screenshot: "images/coffeeroasters-subscription-site.png",
+    description:
+      "A three page website with an order form built with React functional components",
+    gitRepo: "https://github.com/sweenejp/coffeeroasters-subscription-site",
+    liveSite: "https://jsweeney-coffeeroasters-subscription-site.netlify.app/",
+    display: true,
+    tags: ["React", "Styled-components", "Featured"],
+  },
 ];
 
 export default portfolioData;
