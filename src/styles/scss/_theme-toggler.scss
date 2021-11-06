@@ -11,18 +11,16 @@
 
   &__switch {
     position: relative;
-    width: 24px;
-    height: 24px;
-    background-color: $primary-color;
     border-radius: 50%;
-    top: 4px;
-    left: 4px;
+    left: -14px;
     transition: all 150ms ease-in-out;
 
     &--on {
-      transform: translateX(31px);
-      -webkit-transform: translateX(31px);
-      -ms-transform: translateX(31px);
+      transform: translateX(28px);
+      -webkit-transform: translateX(28px);
+      -ms-transform: translateX(28px);
+      -moz-transform: translateX(28px);
+      -o-transform: translateX(28px);
     }
   }
 }
