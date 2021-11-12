@@ -1,22 +1,18 @@
 // sass --watch src/styles/scss/index.scss src/styles/index.css
-@import "resets";
-@import "config";
-@import "header";
-@import "theme-toggler";
-@import "portfolio";
-@import "contact";
-@import "footer";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap");
+@import 'resets';
+@import 'config';
+@import 'header';
+@import 'theme-toggler';
+@import 'portfolio';
+@import 'contact';
+@import 'footer';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
 
 // css custom props
 :root {
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
   scroll-behavior: smooth;
-}
-
-* {
-  transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
 }
 
 // Global classes
@@ -26,6 +22,7 @@
   width: 100%;
   margin: auto;
   color: var(--neutral-color1);
+  transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
 }
 
 main {
@@ -63,7 +60,7 @@ a {
   &::before {
     position: absolute;
     display: block;
-    content: "";
+    content: '';
     left: 0;
     right: 0;
     bottom: -2px;
@@ -97,7 +94,7 @@ a {
     display: grid;
     gap: 0;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "title-section nav-section";
+    grid-template-areas: 'title-section nav-section';
     align-items: center;
     font-size: 1.5rem;
     justify-content: center;

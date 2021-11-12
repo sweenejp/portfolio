@@ -333,15 +333,12 @@ ul {
   scroll-behavior: smooth;
 }
 
-* {
-  transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
-}
-
 .app {
   background-color: var(--background-color);
   width: 100%;
   margin: auto;
   color: var(--neutral-color1);
+  transition: background-color 150ms ease-in-out, color 150ms ease-in-out;
 }
 
 main {
