@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function PortfolioItem(props) {
   const display = props.display;
@@ -8,7 +8,7 @@ function PortfolioItem(props) {
     </span>
   ));
   return (
-    <div className={`portfolio-item ${display ? "" : "hide"}`}>
+    <div className={`portfolio-item ${display ? '' : 'hide'}`}>
       <a tabIndex="-1" href={props.liveSite} target="_blank" rel="noreferrer">
         <img
           className="portfolio-item__screenshot"
@@ -27,31 +27,33 @@ function PortfolioItem(props) {
               className="icon"
               src={
                 props.themeIsLight
-                  ? "images/preview-dark.png"
-                  : "images/preview-light.png"
+                  ? 'images/preview-dark.png'
+                  : 'images/preview-light.png'
               }
               alt="Live Site"
-            />{" "}
+            />{' '}
             View live site
           </a>
         </li>
-        <li className="portfolio-item__list-item">
-          <a
-            className="portfolio-item__link fancy-underline"
-            href={props.gitRepo}
-          >
-            <img
-              className="icon"
-              src={
-                props.themeIsLight
-                  ? "images/github-dark.png"
-                  : "images/github-light.png"
-              }
-              alt="GitHub Repo"
-            />{" "}
-            View repository
-          </a>
-        </li>
+        {props.gitRepo && (
+          <li className="portfolio-item__list-item">
+            <a
+              className="portfolio-item__link fancy-underline"
+              href={props.gitRepo}
+            >
+              <img
+                className="icon"
+                src={
+                  props.themeIsLight
+                    ? 'images/github-dark.png'
+                    : 'images/github-light.png'
+                }
+                alt="GitHub Repo"
+              />{' '}
+              View repository
+            </a>
+          </li>
+        )}
       </ul>
 
       <p className="portfolio-item__description">{props.description}</p>

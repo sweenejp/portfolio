@@ -1,5 +1,5 @@
-import React from "react";
-import Form from "./Form";
+import React from 'react';
+import Form from './Form';
 
 function Contact() {
   return (
@@ -7,7 +7,7 @@ function Contact() {
       <div className="divider"></div>
       <h2 className="section__title contact__title">Contact</h2>
       <p className="section__description">
-        I'd love to build your next website! I look forward to hearing from you.
+        I look forward to building your next website!
       </p>
       <Form />
     </section>

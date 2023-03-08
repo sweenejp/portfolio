@@ -6,7 +6,7 @@ const portfolioData = [
     gitRepo: 'https://github.com/sweenejp/meme-generator',
     liveSite: 'https://jsweeney-meme-generator.netlify.app/',
     display: true,
-    tags: ['React', 'JavaScript', 'API'],
+    tags: ['React'],
   },
   {
     title: 'Social Dashboard',
@@ -15,7 +15,7 @@ const portfolioData = [
     gitRepo: 'https://github.com/sweenejp/social-media-dashboard',
     liveSite: 'https://jasweeney-social-media-dashboard.netlify.app/',
     display: true,
-    tags: ['Featured', 'React', 'JavaScript', 'SASS', 'API'],
+    tags: ['Featured', 'React', 'SASS'],
   },
   {
     title: 'Sunnyside Agency Page',
@@ -100,7 +100,7 @@ const portfolioData = [
     gitRepo: 'https://github.com/sweenejp/ip-address-tracker',
     liveSite: 'https://jsweeney-ip-address-tracker.netlify.app/',
     display: true,
-    tags: ['JavaScript', 'API', 'Featured'],
+    tags: ['Featured'],
   },
   {
     title: 'Coffeeroasters Subscription Site',
@@ -120,6 +120,14 @@ const portfolioData = [
     liveSite: 'https://jsweeney-ecommerce-product-page.netlify.app/',
     display: true,
     tags: ['React', 'Styled-components', 'Featured'],
+  },
+  {
+    title: 'App Landing Page',
+    screenshot: 'images/fishing-app.png',
+    description: 'A landing page for a fishing app',
+    liveSite: 'https://catchjournal.app/static/home-page/index.html',
+    display: true,
+    tags: ['React', 'HTML/CSS'],
   },
 ];
 

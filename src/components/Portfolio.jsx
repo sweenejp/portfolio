@@ -1,9 +1,14 @@
-import React from "react";
-import PortfolioItem from "./PortfolioItem";
+import React from 'react';
+import PortfolioItem from './PortfolioItem';
 
-function Portfolio(props) {
-  const displayedTags = props.displayedTags;
-  const portfolioItems = props.data.map((item) => (
+function Portfolio({
+  portfolioData,
+  allTags,
+  displayedTags,
+  themeIsLight,
+  tagToggler,
+}) {
+  const portfolioItems = portfolioData.map((item) => (
     <PortfolioItem
       key={item.title}
       {...item}
@@ -12,18 +17,18 @@ function Portfolio(props) {
           ? true
           : false
       }
-      themeIsLight={props.themeIsLight}
+      themeIsLight={themeIsLight}
     />
   ));
 
-  const tagButtons = props.allTags.sort().map((item) => (
+  const tagButtons = allTags.sort().map((item) => (
     <button
       className={`tag-button ${
-        displayedTags.indexOf(item) >= 0 ? "active" : ""
+        displayedTags.indexOf(item) >= 0 ? 'active' : ''
       }`}
       key={item}
       name={item}
-      onClick={props.tagToggler}
+      onClick={tagToggler}
       onMouseDown={(e) => e.preventDefault()}
     >
       {item}
