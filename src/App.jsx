@@ -39,6 +39,8 @@ const App = () => {
     setDisplayedTags(newDisplayedTags);
   };
 
+  const portfolioDataReversed = [...portfolioData].reverse();
+
   return (
     <div className={themeIsLight ? 'app theme-light' : 'app theme-dark'}>
       <Header
@@ -48,7 +50,7 @@ const App = () => {
       <main>
         <Portfolio
           tagToggler={tagToggler}
-          portfolioData={portfolioData}
+          portfolioData={portfolioDataReversed}
           allTags={allTags}
           displayedTags={displayedTags}
           themeIsLight={themeIsLight}
